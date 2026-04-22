@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Super Bikes Gallery</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background: linear-gradient(to right, #141e30, #243b55);
+color:white;
+}
+
+/* Header */
+
+header{
+text-align:center;
+padding:20px;
+background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+header h1{
+font-size:35px;
+}
+
+/* Gallery */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+/* Image Box */
+
+.image-box{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.5);
+transition:0.4s;
+}
+
+.image-box img{
+width:300px;
+height:200px;
+display:block;
+transition:0.5s;
+}
+
+/* Hover Effect */
+
+.image-box:hover img{
+transform:scale(1.1);
+}
+
+/* Overlay */
+
+.overlay{
+position:absolute;
+bottom:0;
+width:100%;
+padding:10px;
+text-align:center;
+background:linear-gradient(transparent, black);
+opacity:0;
+transition:0.5s;
+font-weight:bold;
+}
+
+.image-box:hover .overlay{
+opacity:1;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:15px;
+background:linear-gradient(to right,#ff512f,#dd2476);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Super Bikes Gallery</h1>
+</header>
+
+<div class="gallery">
+
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39">
+<div class="overlay">Yamaha R1</div>
+</div>
+
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65">
+<div class="overlay">Kawasaki Ninja</div>
+</div>
+
+
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1580310614729-ccd69652491d">
+<div class="overlay">BMW S1000RR</div>
+</div>
+
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341">
+<div class="overlay">Suzuki Hayabusa</div>
+</div>
+
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6">
+<div class="overlay">KTM RC 390</div>
+</div>
+
+</div>
+
+<footer>
+<p>Super Bikes Image Gallery | Web Design Practical</p>
+<p>Harshal Harinkhede<p>
+<p>CS25142<p>
+</footer>
+
+</body>
+</html>
